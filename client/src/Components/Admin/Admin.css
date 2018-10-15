@@ -1,0 +1,80 @@
+.admin-content {
+    background: #f9f9f9;
+    padding: 3%;
+}
+.admin-tab-content {
+    background: #fff;
+    padding: 20px;
+}
+.admin-hotel-content p {
+    margin: 0!important;
+}
+.admin-hotel-content .fa-h-square {
+    border: solid thin #e1e1e1;
+    border-radius: 50%;
+   padding: 10px 12px;
+   color: #e04f67;
+}
+.admin-hotel-content .hotel-first-para {
+    padding-left: 50px;
+    margin-top: -12px!important;
+    color: #999;
+    font-size: 11px !important;
+}
+.admin-hotel-content span {
+    padding-left: 10px;
+}
+.admin-hotel-content .para-color {
+    color: #999!important;
+
+}
+.admin-hotel-content .admin-booking-para {
+    text-transform: uppercase;
+    display: block;
+    color: #555;
+    font-size: 11px!important;
+    line-height: 12px;
+    font-weight: bold;
+}
+.custom-admin-edit-btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #999;
+    /* background: #51bce6; */
+    cursor: pointer;
+    padding: 7px 8px;
+    font-size: 11px;
+    line-height: 9px;
+    display: block;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 5px 0;
+}
+.btn-info {
+    color: #fff;
+}
+.wihlist-content .custom-img-box {
+    width: auto;
+    height: auto;
+}
+.setting-content h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.profile-content h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.admin-upper-most-para {
+    color: #fff;
+}

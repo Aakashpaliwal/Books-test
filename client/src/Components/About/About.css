@@ -1,0 +1,63 @@
+.customer-left-side-box {
+  padding: 30px;
+    position: relative;
+    background: #fff;
+    margin-bottom: 30px;
+    color: #888;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.customer-left-side-box p {
+  font-size: 14px;
+}
+.customer-left-side-box .fa {
+  width: 65px;
+  height: 65px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px dashed #ccc;
+  font-size: 34px;
+  color: #6dcff6;
+}
+.about-content {
+  background: #f9f9f9;
+    padding: 5%;
+}
+.customer-left-side-box h3 {
+  color: #333;
+}
+.customer-left-side-box h3 span {
+  color: #e04f67;
+}
+.bg-img-600 {
+  background: url(../img/features-intro-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 400px;
+}
+.background-about-here {
+  background: #ccc;
+}
+.right-pink-bg {
+  background: #e04f67;
+  height: 400px;
+  padding: 11% 100px 10% 100px;
+}
+.right-pink-bg p {
+  color: #fff;
+}
+.custom-btn-pink {
+color: #e04f67;
+font-weight: bold;
+padding: 5px 30px;
+font-size: 14px;
+}
+.custom-btn-pink:hover {
+  background: #000;
+  color: #fff;
+  transform: all ease 0.5s;
+  border: solid thin #000;
+}

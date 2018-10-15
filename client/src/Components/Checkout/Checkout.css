@@ -1,0 +1,80 @@
+.checkout-content {
+    background: #f9f9f9;
+    padding: 5%;
+}
+.custom-card {
+    background: #f4f5f6;
+    border: 1px solid #ededed;
+    padding: 15px 20px;
+}
+.checkout-left-content h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+.checkout-right-content h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    
+}
+.custom-right-span {
+    float: right;
+}
+.custom-float-left {
+    float: left;
+}
+.custom-float-right {
+    float: right;
+}
+.custom-float-right p {
+    padding-top: 20px;
+
+}
+.checkout-thumb {
+    padding: 10px;
+   
+}
+.checkout-price {
+    padding: 2px 10px;
+   
+}
+.checkout-price hr {
+    margin-bottom: 0!important;
+}
+.checkout-order {
+    padding-top: 10px;
+    background: #f4f5f6;
+    margin: 0!important;
+}
+.checkout-order p {
+    color: #f7542b;
+    font-weight: bold;
+}
+.checkout-price hr {
+    margin: 0!important;
+}
+.checkout-thumb p {
+    padding-top: 20px;
+}
+.payment-here {
+    margin-top: 20px;
+}
+.pay-data h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: solid 1px #ededed;
+    padding-bottom: 10px;
+}
+.pay-data .form-check {
+    margin: 10px 0;
+}
+.custom-place-btn {
+    background: #85c99d;
+   margin-top: 30px;
+   border: #85c99d;
+   font-weight: bold;
+   font-size: 15px;
+}
+/* .checkout-thumb {
+    border-bottom: 1px solid #ededed;
+} */

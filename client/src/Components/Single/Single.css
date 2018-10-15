@@ -1,0 +1,38 @@
+.upper-icons p{
+font-size: 14px;
+}
+.upper-icons {
+    margin: 20px 0;
+}
+.upper-icons .fa {
+    font-size: 23px;
+    color: #6c757d;
+
+}
+.single-content {
+    background: #f9f9f9;
+    padding: 3%;
+}
+.single-description ul {
+    list-style: none;
+    margin-left: -38px;
+  }
+  
+  .single-description ul li:before {
+    content: '✓';
+    padding-left: 0!important;
+    padding-right: 12px;
+  }
+  .reviews-para .fa {
+      margin:  0 5px;
+  }
+.below-review-rating {
+    margin: 10px 0;
+}
+.below-review-rating p {
+    margin: 0px!important;
+}
+.map-btn {
+    background: #e04f67;
+    border-color: #e04f67;
+}

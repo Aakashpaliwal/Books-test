@@ -1,0 +1,42 @@
+.custom-money-box {
+    border: solid thin #e1e1e1;
+    background-color: #fff;
+}
+.wishlist-content {
+    background: #f9f9f9;
+    padding: 3%;
+}
+.wishlist-content .fa-smile-o {
+    margin: 0 3px;
+}
+.right-side-content-detail .custom-img-box {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+.right-side-content-detail {
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+
+}
+.left-side-content-detail {
+    background: #fff;
+    margin-top: 20px;
+    border: solid thin #e1e1e1;
+    border-radius: 3px;
+    padding: 10px;
+}
+.right-side-content-detail .right-side-para {
+    color: #777;
+    font-size: 12px;
+}
+.right-side-content-detail .custom-middle-content {
+    padding: 20px 0;
+    padding-bottom: 0;
+}
+.right-side-content-detail .custom-right-detail-btn {
+    margin-top: 50px;
+}
+.right-side-content-detail .custom-col-hr {
+    border-right: solid thin #e1e1e1;
+}
