@@ -50,8 +50,8 @@ class AddLogin extends Component {
 		  .then(response => response.json())
 		  .then(json => {
 			   if(json.success === true){
-				// this.props.history.push('/');
-				alert('VALID CREDENTIALS CONGRATULATIONS!!!!')
+				this.props.history.push('/Admin');
+				// alert('VALID CREDENTIALS CONGRATULATIONS!!!!')
 				}else{
 					console.log(json);
 				}

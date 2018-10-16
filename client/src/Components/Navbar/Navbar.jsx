@@ -49,6 +49,8 @@ export class Navbar extends Component {
             </li>
             <li className="nav-item"> <a className="nav-link" href="#"><Link to ="/Blog">Bonus</Link></a>
             </li>
+            <li className="nav-item"> <a className="nav-link" href="#"><Link to ="/AddLogin">Login</Link></a>
+            </li>
             {/* <li className="nav-item">
              <a className="nav-link" href="/#contact">Contact</a>
             </li> */}
