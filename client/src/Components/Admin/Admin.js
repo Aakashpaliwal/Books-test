@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 class Admin extends Component {
   btn1div = e => {
     // $('#btn1').click(function(e) {
-      console.log('btn1-click');
+      // console.log('btn1-click');
       e.preventDefault(); // prevent submitting forms by accident
       $('#img1').show();
       $('#img2').hide();
@@ -188,30 +188,22 @@ class Admin extends Component {
 <table class="table table-striped table-hover">
   <thead className="bg-info">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Book's Title</th>
+      <th scope="col">Author's Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Digital Fortress</td>
+      <td>Dan Brown</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+    <td>Angels & Demons</td>
+      <td>Dan Brown</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+    <td>Da Vinci's Code</td>
+      <td>Dan Brown</td>
     </tr>
   </tbody>
 </table>
