@@ -1,8 +1,25 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import './Admin.css';
 import {Link} from 'react-router-dom';
+// import './Customadmin';
 
 class Admin extends Component {
+  btn1div = e => {
+    // $('#btn1').click(function(e) {
+      console.log('btn1-click');
+      e.preventDefault(); // prevent submitting forms by accident
+      $('#img1').show();
+      $('#img2').hide();
+  
+  }
+  btn2div = e => {
+    // $('#btn2').click(function(e) {
+      e.preventDefault(); // prevent submitting forms by accident
+      $('#img1').hide();
+      $('#img2').show();
+  
+  }
     render() {
         return (
             <React.Fragment>
@@ -29,7 +46,9 @@ class Admin extends Component {
        <div className="row admin-tab-content">
        <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Booking</a>
+  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+    Books
+  </a>
   <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Wishlist</a>
   <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Settings</a>
   <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Profile</a>
@@ -38,109 +57,165 @@ class Admin extends Component {
 <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 <div class="tab-content" id="v-pills-tabContent">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      {/* <div className="admin-hotel-content">
+            <div className="row">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <i class="fa fa-h-square" aria-hidden="true"></i>
+                   
+                <span>HOTEL MARIOTT PARIS</span>
+                <p className="hotel-first-para">2 Adults 2 Nights</p>
+                
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
+                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
+                <p className="para-color">23442</p>
+
+                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
+                <p className="para-color">SAt. 23 Dec. 2015</p>
+
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
+                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
+                </div>
+               
+            </div>
+            <hr />
+
+             <div className="row">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <i class="fa fa-h-square" aria-hidden="true"></i>
+                   
+                <span>HOTEL MARIOTT PARIS</span>
+                <p className="hotel-first-para">2 Adults 2 Nights</p>
+                
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
+                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
+                <p className="para-color">23442</p>
+
+                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
+                <p className="para-color">SAt. 23 Dec. 2015</p>
+
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
+                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
+                </div>
+               
+            </div>
+            <hr />
+
+             <div className="row">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <i class="fa fa-h-square" aria-hidden="true"></i>
+                   
+                <span>HOTEL MARIOTT PARIS</span>
+                <p className="hotel-first-para">2 Adults 2 Nights</p>
+                
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
+                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
+                <p className="para-color">23442</p>
+
+                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
+                <p className="para-color">SAt. 23 Dec. 2015</p>
+
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
+                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
+                </div>
+               
+            </div>
+            <hr />
+            <div className="row">
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <i class="fa fa-h-square" aria-hidden="true"></i>
+                   
+                <span>HOTEL MARIOTT PARIS</span>
+                <p className="hotel-first-para">2 Adults 2 Nights</p>
+                
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
+                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
+                <p className="para-color">23442</p>
+
+                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
+                <p className="para-color">SAt. 23 Dec. 2015</p>
+
+                </div>
+
+                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
+                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
+                </div>
+               
+            </div>
+            <hr />
+      </div> */}
+
       <div className="admin-hotel-content">
-            <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <i class="fa fa-h-square" aria-hidden="true"></i>
-                   
-                <span>HOTEL MARIOTT PARIS</span>
-                <p className="hotel-first-para">2 Adults 2 Nights</p>
-                
-                </div>
+        <div className="custom-hotel-buttons text-center">
+        <button type="button" className="btn btn-primary custom-view-btn active" id="btn-1" value="btn1div" onClick={e => this.btn1div(e)}><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add</button>
+        <button type="button" className="btn btn-info custom-view-btn" id="btn-2" value="btn2div" onClick={e => this.btn2div(e)}><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp;View</button>
+        </div>
 
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
-                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
-                <p className="para-color">23442</p>
+        <div className="custom-hotel-form custom-form-display" id="img1">
+          <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      {/* <label for="inputEmail4">Enter Book Name</label> */}
+      <input type="text" class="form-control custom-book-input" placeholder="Enter Book Title" />
+    </div>
+    <div class="form-group col-md-6">
+      {/* <label for="inputPassword4">Enter Author's Name</label> */}
+      <input type="text" class="form-control custom-book-input" placeholder="Enter Author's Name" />
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary form-control book-sbmt-btn">Submit</button>
+</form>
+</div>
 
-                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
-                <p className="para-color">SAt. 23 Dec. 2015</p>
-
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
-                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
-                </div>
-               
-            </div>
-            <hr />
-
-             <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <i class="fa fa-h-square" aria-hidden="true"></i>
-                   
-                <span>HOTEL MARIOTT PARIS</span>
-                <p className="hotel-first-para">2 Adults 2 Nights</p>
-                
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
-                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
-                <p className="para-color">23442</p>
-
-                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
-                <p className="para-color">SAt. 23 Dec. 2015</p>
-
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
-                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
-                </div>
-               
-            </div>
-            <hr />
-
-             <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <i class="fa fa-h-square" aria-hidden="true"></i>
-                   
-                <span>HOTEL MARIOTT PARIS</span>
-                <p className="hotel-first-para">2 Adults 2 Nights</p>
-                
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
-                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
-                <p className="para-color">23442</p>
-
-                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
-                <p className="para-color">SAt. 23 Dec. 2015</p>
-
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
-                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
-                </div>
-               
-            </div>
-            <hr />
-            <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <i class="fa fa-h-square" aria-hidden="true"></i>
-                   
-                <span>HOTEL MARIOTT PARIS</span>
-                <p className="hotel-first-para">2 Adults 2 Nights</p>
-                
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
-                <p className="admin-booking-para"><strong>BOOKING ID</strong></p>
-                <p className="para-color">23442</p>
-
-                     <p className="admin-booking-para"><strong>BOOKED ON</strong></p>
-                <p className="para-color">SAt. 23 Dec. 2015</p>
-
-                </div>
-
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-                    <button type="button" className="btn btn-info custom-admin-edit-btn form-control">EDIT</button>
-                    <button type="button" className="btn btn-light custom-admin-edit-btn form-control">CANCEL</button>
-                </div>
-               
-            </div>
-            <hr />
+<div className="custom-hotel-table custom-table-display" id="img2">
+<table class="table table-striped table-hover">
+  <thead className="bg-info">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
       </div>
   </div>
   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">

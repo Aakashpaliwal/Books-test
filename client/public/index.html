@@ -38,129 +38,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script>
-  $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-  </script>
-  <script>
-  $(document).ready(function(){
-    var moving__background = $("#header__background");
-    $(window).scroll(function() { 
-        moving__background.css('margin-top', ($(window).scrollTop())/3); // Parallax scrolling
-        moving__background.css('opacity', 1 - ($(window).scrollTop())/moving__background.height()); // Fading out
-    });
-});
-  </script>
-  <script>
-      
-    function scrollFooter(scrollY, heightFooter)
-{
-  console.log(scrollY);
-  console.log(heightFooter);
-
-  if(scrollY >= heightFooter)
-  {
-      $('footer').css({
-          'bottom' : '0px'
-      });
-  }
-  else
-  {
-      $('footer').css({
-          'bottom' : '-' + heightFooter + 'px'
-      });
-  }
-}
-
-$(window).load(function(){
-  var windowHeight        = $(window).height(),
-      footerHeight        = $('footer').height(),
-      heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
-
-  // Definindo o tamanho do elemento pra animar
-  $('#scroll-animate, #scroll-animate-main').css({
-      'height' :  heightDocument + 'px'
-  });
-
-  // Definindo o tamanho dos elementos header e conteúdo
-  $('header').css({
-      'height' : windowHeight + 'px',
-      'line-height' : windowHeight + 'px'
-  });
-
-  $('.wrapper-parallax').css({
-      'margin-top' : windowHeight + 'px'
-  });
-
-  scrollFooter(window.scrollY, footerHeight);
-
-  // ao dar rolagem
-  window.onscroll = function(){
-      var scroll = window.scrollY;
-
-      $('#scroll-animate-main').css({
-          'top' : '-' + scroll + 'px'
-      });
-      
-      $('header').css({
-          'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
-      });
-
-      scrollFooter(scroll, footerHeight);
-  }
-});
-    
-    </script>
-   
-
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    </script>
-    <!--parallax script herer-->
+    <script src="assets/js/jquery3.1.js"></script>
 <script>
     $(function () {
   $(document).scroll(function () {
@@ -174,6 +52,18 @@ $(window).load(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
         </script>
+
+ <script type="text/JavaScript">
+    $('a.switcher').on('click', function(e){
+    e.preventDefault();
+    if ( $(this).hasClass('active') ) {
+        //nothing, or notify it's already active
+        alert('i am already active');
+        } else {
+            $('.switcher, .plans').toggleClass('active');
+        }
+});
+    </script>     
     
 
   </body>

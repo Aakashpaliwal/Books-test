@@ -78,3 +78,46 @@
 .admin-upper-most-para {
     color: #fff;
 }
+.custom-hotel-buttons button {
+    margin: 0 50px;
+}
+.custom-hotel-buttons .custom-view-btn {
+    padding: 5px 25px;
+}
+.custom-hotel-form {
+    margin-top: 40px;
+}
+.custom-hotel-form .custom-book-input {
+    border-top: none!important;
+    border-right: none!important;
+    border-left: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+
+}
+.custom-hotel-form .custom-book-input:focus {
+    border-bottom: solid 1px #51bce6;
+    
+}
+.book-sbmt-btn {
+    background: #51bce6;
+    border: #51bce6;
+}
+.switcher {padding:5px;background:grey}
+.switcher.active {color:red}
+.plans {display:none}
+.plans.active {display:block}
+/* 
+.custom-form-display {
+    display: block;
+}
+.custom-table-display {
+    display: none;
+} */
+#img1 {
+    display: block;
+}
+#img2 {
+    display: none;
+    margin-top: 40px;
+}
