@@ -47,11 +47,14 @@ class Admin extends Component {
        <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
   <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-    Books
+  <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp; Books
   </a>
-  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Wishlist</a>
-  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Settings</a>
-  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Profile</a>
+  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+  <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;&nbsp;Wishlist</a>
+  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+  <i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;Settings</a>
+  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+&nbsp;&nbsp;Profile</a>
 </div>
 </div>
 <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">

@@ -5,6 +5,7 @@
 .admin-tab-content {
     background: #fff;
     padding: 20px;
+    border: solid thin #e1e1e1;
 }
 .admin-hotel-content p {
     margin: 0!important;
@@ -120,4 +121,31 @@
 #img2 {
     display: none;
     margin-top: 40px;
+}
+.admin-tab-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+    background: #fff;
+    color: #444;
+    border-bottom: solid 1px #007bff;
+    border-radius: 0;
+    font-weight: bold;
+   
+}
+.admin-tab-content .nav-pills .nav-link {
+    color: #fff;
+    background-color: #007bff;
+    background: #fff;
+    color: #999;
+    border-bottom: solid 1px #e1e1e1;
+    border-radius: 0;
+    margin: 8px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    /* transition: all ease-in-out 0.5s; */
+}
+.admin-tab-content .nav-pills .nav-link .fa {
+    color: #f90;
+    font-size: 15px;
+    padding-right: 8px;
 }
