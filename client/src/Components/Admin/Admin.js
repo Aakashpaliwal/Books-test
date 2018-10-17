@@ -42,22 +42,22 @@ class Admin extends Component {
 
 {/*admin content here */}
 <section className="admin-content">
-    <div className="container">
+    <div className="container-fluid">
        <div className="row admin-tab-content">
-       <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+       <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12 left-side-border">
        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
   <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
   <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp; Books
   </a>
   <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-  <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;&nbsp;Wishlist</a>
+  <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;Wishlist</a>
   <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
   <i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;Settings</a>
   <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
 &nbsp;&nbsp;Profile</a>
 </div>
 </div>
-<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 right-side-padding">
 <div class="tab-content" id="v-pills-tabContent">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
       {/* <div className="admin-hotel-content">
@@ -167,7 +167,7 @@ class Admin extends Component {
 
       <div className="admin-hotel-content">
         <div className="custom-hotel-buttons text-center">
-        <button type="button" className="btn btn-primary custom-view-btn active" id="btn-1" value="btn1div" onClick={e => this.btn1div(e)}><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add</button>
+        <button type="button" className="btn btn-primary custom-add-btn active" id="btn-1" value="btn1div" onClick={e => this.btn1div(e)}><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add</button>
         <button type="button" className="btn btn-info custom-view-btn" id="btn-2" value="btn2div" onClick={e => this.btn2div(e)}><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp;View</button>
         </div>
 
@@ -183,7 +183,7 @@ class Admin extends Component {
       <input type="text" class="form-control custom-book-input" placeholder="Enter Author's Name" />
     </div>
   </div>
-  <button type="submit" class="btn btn-primary form-control book-sbmt-btn">Submit</button>
+  <button type="submit" class="btn form-control book-sbmt-btn">Submit</button>
 </form>
 </div>
 
@@ -412,7 +412,7 @@ class Admin extends Component {
       <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password" />
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn book-sbmt-btn-sign form-control">Sign in</button>
 </form>
                 </div>
             </div>
