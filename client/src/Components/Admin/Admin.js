@@ -182,6 +182,14 @@ class Admin extends Component {
       {/* <label for="inputPassword4">Enter Author's Name</label> */}
       <input type="text" class="form-control custom-book-input" placeholder="Enter Author's Name" />
     </div>
+    <div class="form-group col-md-6">
+      {/* <label for="inputPassword4">Enter Author's Name</label> */}
+      <input type="text" class="form-control custom-book-input" placeholder="Enter Publisher's Name" />
+    </div>
+    <div class="form-group col-md-6">
+      {/* <label for="inputPassword4">Enter Author's Name</label> */}
+      <input type="number" class="form-control custom-book-input" placeholder="Enter Price" />
+    </div>
   </div>
   <button type="submit" class="btn form-control book-sbmt-btn">Submit</button>
 </form>
@@ -193,20 +201,28 @@ class Admin extends Component {
     <tr>
       <th scope="col">Book's Title</th>
       <th scope="col">Author's Name</th>
+      <th scope="col">Publisher's Name</th>
+      <th scope="col">Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Digital Fortress</td>
       <td>Dan Brown</td>
+      <td>Croosword</td>
+      <td>399</td>
     </tr>
     <tr>
     <td>Angels & Demons</td>
       <td>Dan Brown</td>
+      <td>Croosword</td>
+      <td>399</td>
     </tr>
     <tr>
     <td>Da Vinci's Code</td>
       <td>Dan Brown</td>
+      <td>Croosword</td>
+      <td>399</td>
     </tr>
   </tbody>
 </table>

@@ -12,6 +12,7 @@ font-size: 14px;
 .single-content {
     background: #f9f9f9;
     padding: 3%;
+    font-family:"Montserrat", Arial, sans-serif;
 }
 .single-description ul {
     list-style: none;
